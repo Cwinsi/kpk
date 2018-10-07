@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/grigo/CLionProjects/p32_pr2_zav1/Consumer.h
+string
+-
+
+C:/Users/grigo/CLionProjects/p32_pr2_zav1/House.h
+vector
+-
+Consumer.h
+C:/Users/grigo/CLionProjects/p32_pr2_zav1/Consumer.h
+
+C:/Users/grigo/CLionProjects/p32_pr2_zav1/main.cpp
+iostream
+-
+string
+-
+Consumer.h
+C:/Users/grigo/CLionProjects/p32_pr2_zav1/Consumer.h
+House.h
+C:/Users/grigo/CLionProjects/p32_pr2_zav1/House.h
+

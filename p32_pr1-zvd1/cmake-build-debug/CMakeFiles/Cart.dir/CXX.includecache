@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/grigo/CLionProjects/Cart/Cart.cpp
+Cart.h
+C:/Users/grigo/CLionProjects/Cart/Cart.h
+iostream
+-
+
+C:/Users/grigo/CLionProjects/Cart/Cart.h
+string
+C:/Users/grigo/CLionProjects/Cart/string
+Product.h
+C:/Users/grigo/CLionProjects/Cart/Product.h
+vector
+C:/Users/grigo/CLionProjects/Cart/vector
+
+C:/Users/grigo/CLionProjects/Cart/Product.h
+string
+C:/Users/grigo/CLionProjects/Cart/string
+
+C:/Users/grigo/CLionProjects/Cart/main.cpp
+iostream
+-
+string
+-
+clocale
+-
+Cart.h
+C:/Users/grigo/CLionProjects/Cart/Cart.h
+Product.h
+C:/Users/grigo/CLionProjects/Cart/Product.h
+

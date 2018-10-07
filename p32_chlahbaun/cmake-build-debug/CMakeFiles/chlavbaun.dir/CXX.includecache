@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/grigo/CLionProjects/chlavbaun/TollBooth.cpp
+TollBooth.h
+C:/Users/grigo/CLionProjects/chlavbaun/TollBooth.h
+iostream
+-
+
+C:/Users/grigo/CLionProjects/chlavbaun/TollBooth.h
+

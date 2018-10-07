@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/grigo/CLionProjects/p32_timer/Time.h
+
+C:/Users/grigo/CLionProjects/p32_timer/main.cpp
+iostream
+-
+Time.h
+C:/Users/grigo/CLionProjects/p32_timer/Time.h
+

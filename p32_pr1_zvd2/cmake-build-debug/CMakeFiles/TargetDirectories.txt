@@ -1,0 +1,3 @@
+C:/Users/grigo/CLionProjects/p32_pr1_zvd2/cmake-build-debug/CMakeFiles/p32_pr1_zvd2.dir
+C:/Users/grigo/CLionProjects/p32_pr1_zvd2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/grigo/CLionProjects/p32_pr1_zvd2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

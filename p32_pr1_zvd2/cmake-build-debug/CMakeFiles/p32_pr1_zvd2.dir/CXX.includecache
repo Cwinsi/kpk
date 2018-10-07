@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/grigo/CLionProjects/p32_pr1_zvd2/Timer.cpp
+Timer.h
+C:/Users/grigo/CLionProjects/p32_pr1_zvd2/Timer.h
+iostream
+-
+
+C:/Users/grigo/CLionProjects/p32_pr1_zvd2/Timer.h
+ctime
+-
+
+C:/Users/grigo/CLionProjects/p32_pr1_zvd2/main.cpp
+iostream
+-
+Timer.h
+C:/Users/grigo/CLionProjects/p32_pr1_zvd2/Timer.h
+
