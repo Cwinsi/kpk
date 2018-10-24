@@ -1,7 +1,12 @@
 #include <iostream>
 
 int main() {
-    const int months[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    const int months[12] = {
+            31, 28, 31,
+            30, 31, 30,
+            31, 31, 30,
+            31, 30, 31
+    };
 
     int day;
     int month;
