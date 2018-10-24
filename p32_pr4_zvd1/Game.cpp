@@ -75,15 +75,28 @@ void Game::writeArea() {
 
     std::cout << "x\\y";
     for(int i = 0; i < size; i++){
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 95);
         std::cout << "|" << (char)('a' + i) << "|";
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
     }
     std::cout << std::endl;
 
     for(int i = 0; i < size; i++){
+
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 95);
         std::cout << "|" << i << "|";
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+
         for(int j = 0; j < size; j++){
-            if(this->area[i][j] != -1)
-                std::cout << "|" << this->area[i][j] << "|";
+            if(this->area[i][j] != -1) {
+                std::cout << "|";
+
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), static_cast<WORD>(9 + this->area[i][j]));
+                std::cout << (char)219;
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+
+                std::cout << "|";
+            }
             else if(i == size - 1)
                 std::cout << "| |";
             else
