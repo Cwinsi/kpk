@@ -37,10 +37,8 @@ void Game::start() {
 
         this->writeArea();
 
-        if(checkWinOrNightly()){
-            std::cout << "Player " << this->currentPlayer << " win!!!";
+        if(checkWinOrNightly())
             break;
-        }
 
         if(this->currentPlayer == this->playersCount)
             this->currentPlayer = 1;
@@ -50,19 +48,29 @@ void Game::start() {
 }
 
 void Game::turn() {
-    std::cout << "\n Player progress number " << this->currentPlayer << std::endl;
+    bool correct = true;
 
-    // TODO: забрати цей костиль з X, Y,які насправді перепутані
-    char x;
-    int y;
+    while(correct) {
+        std::cout << "\n Player progress number " << this->currentPlayer << std::endl;
 
-    std::cout << "Write x: ";
-    std::cin >> y;
+        // TODO: забрати цей костиль з X, Y,які насправді перепутані
+        char x;
+        int y;
 
-    std::cout << "Write y: ";
-    std::cin >> x;
+        std::cout << "Write x: ";
+        std::cin >> y;
 
-    this->updateAreaCell(x, y);
+        std::cout << "Write y: ";
+        std::cin >> x;
+
+
+        if((x - 97) >= this->size || (x - 97) < 0 || y >= this->size || y < 0){
+            std::cout << "Turn is not correct" << std::endl;
+        } else {
+            correct = false;
+            this->updateAreaCell(x, y);
+        }
+    }
 }
 
 void Game::writeArea() {
@@ -115,6 +123,22 @@ bool Game::updateAreaCell(char x, int y) {
 }
 
 bool Game::checkWinOrNightly() {
+    bool nightly = true;
+    for(int x = 0; x < size; x++){
+        for(int y = 0; y < size; y++){
+            if(this->area[x][y] == -1)
+                nightly = false;
+        }
+
+        if(!nightly)
+            break;
+    }
+
+    if(nightly) {
+        std::cout << "nightly!!!" << std::endl;
+        return true;
+    }
+
     int direction[8][2] = {
             {-1, -1},
             {-1, 1},
@@ -130,8 +154,10 @@ bool Game::checkWinOrNightly() {
         for(int y = 0; y < size; y++){
             if(this->area[x][y] == this->currentPlayer){
                 for (auto &direct : direction) {
-                    if(this->checkLine(direct, x, y))
+                    if(this->checkLine(direct, x, y)) {
+                        std:: cout << "Player " << this->currentPlayer << " win!!!" << std::endl;
                         return true;
+                    }
                 }
             }
         }
@@ -154,8 +180,3 @@ bool Game::checkLine(int direction[2], int x, int y) {
 
     return true;
 }
-
-
-
-
-
