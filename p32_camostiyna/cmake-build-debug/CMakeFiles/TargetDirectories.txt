@@ -1,0 +1,3 @@
+C:/Users/grigo/GitHub/kpk/p32_camostiyna/cmake-build-debug/CMakeFiles/p32_camostiyna.dir
+C:/Users/grigo/GitHub/kpk/p32_camostiyna/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/grigo/GitHub/kpk/p32_camostiyna/cmake-build-debug/CMakeFiles/rebuild_cache.dir

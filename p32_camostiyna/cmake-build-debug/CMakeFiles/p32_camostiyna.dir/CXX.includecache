@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/grigo/GitHub/kpk/p32_camostiyna/Matrix.h
+Vector.h
+C:/Users/grigo/GitHub/kpk/p32_camostiyna/Vector.h
+
+C:/Users/grigo/GitHub/kpk/p32_camostiyna/Vector.h
+cmath
+-
+type_traits
+-
+
+C:/Users/grigo/GitHub/kpk/p32_camostiyna/main.cpp
+iostream
+-
+Vector.h
+C:/Users/grigo/GitHub/kpk/p32_camostiyna/Vector.h
+Matrix.h
+C:/Users/grigo/GitHub/kpk/p32_camostiyna/Matrix.h
+
